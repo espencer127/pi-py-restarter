@@ -8,7 +8,7 @@ Sometimes my Raspberry Pi SSH session will hang, and the only solution is a rest
 1. Create the file in `/home/pi/rebootSrv.py`
 2. Setup a cron schedule so the script is run on reboot. Run `sudo crontab -e` and then add the line `@reboot python /home/pi/rebootSrv.py`
 
-That should do it!
+That should do it! Now when you reboot your pi you should be able to trigger the script by navigating to `http://X.X.X.X:6502/rebootSrv.py`
 
 References -
 * https://forums.raspberrypi.com/viewtopic.php?t=98153
